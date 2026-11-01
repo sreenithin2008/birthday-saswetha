@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Saswetha!</title>
+  <!-- Google Fonts for premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Confetti library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <!-- PAGE 1: The Birthday Cover -->
+  <section id="page-1" class="page active">
+    <div class="overlay"></div>
+    <div class="bg-image-box">
+      <img src="images/cover.jpg" alt="Saswetha" class="bg-img" />
+    </div>
+
+    <div class="page-content">
+      <div class="badge">✨ Special Day ✨</div>
+      <h1 class="main-quote">"wishing you a very happy birthday saswetha"</h1>
+      <p class="subtitle">A little journey awaits you...</p>
+      <button class="nav-btn" onclick="goToPage(2)">
+        Move to Next Page <span class="arrow">→</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 2: The Celebration & Cake Wish -->
+  <section id="page-2" class="page">
+    <div class="cake-card">
+      <div class="cake-photo-wrapper">
+        <img src="images/cake.jpg" alt="Birthday Cake Memory" class="cake-img" />
+      </div>
+      <div class="cake-text-content">
+        <div class="badge glow">🎂 A Wish For You</div>
+        <h2 class="serif-quote">"hoping you for an Amazing and prosperous life forward"</h2>
+        <button class="nav-btn" onclick="goToPage(3)">
+          Next Memory <span class="arrow">→</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 3: The Childhood Teaser with Live Floating Emojis -->
+  <section id="page-3" class="page teaser-page">
+    <div class="floating-emojis-bg" id="emojiCanvas"></div>
+    <div class="teaser-content">
+      <div class="icon-bubble">🧸</div>
+      <h1 class="teaser-quote">"A little glimpse of your childhood that I remembered to save"</h1>
+      <button class="nav-btn magic-btn" onclick="goToPage(4)">
+        Open the Memory 🎁
+      </button>
+    </div>
+  </section>
+
+  <!-- PAGE 4: The Childhood Photo & Finale -->
+  <section id="page-4" class="page finale-page">
+    <div class="polaroid-wrapper">
+      <div class="polaroid">
+        <div class="polaroid-img-box">
+          <img src="images/childhood.jpg" alt="Childhood Memory" class="childhood-img" />
+        </div>
+        <p class="polaroid-caption">Childhood Days ✨</p>
+      </div>
+    </div>
+
+    <div class="finale-content">
+      <h2 class="finale-text">Hope you liked this ❤️</h2>
+      <div class="finale-buttons">
+        <button class="nav-btn replay-btn" onclick="goToPage(1)">
+          Replay from Beginning ↺
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
