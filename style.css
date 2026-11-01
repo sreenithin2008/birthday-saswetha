@@ -156,8 +156,11 @@ body, html {
 
 .cake-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-height: 180px;
+  objject-fit: 120px;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
 .serif-quote {
